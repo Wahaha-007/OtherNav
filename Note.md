@@ -36,3 +36,7 @@ npx expo install react-native-safe-area-context@4.2.4 react-native-screens@~3.11
 
 2. use expo r -c instead  // Some kind of clear cache ?
 3. Close server and npm run start:wsl => OK
+
+# Adding Bottom Tabs Navigator
+
+expo install @react-navigation/bottom-tabs
