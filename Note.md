@@ -21,5 +21,18 @@ __*EXPO*__
 __*NAVIGATOR*__
 
 # Adding Drawer Navigator
-npm install @react-navigation/drawer
+expo install @react-navigation/drawer
 expo install react-native-gesture-handler react-native-reanimated
+npx expo install react-native-safe-area-context@4.2.4 react-native-screens@~3.11.1   => Follow Expo hint
+
+
+--XXX npm install react-native-reanimated@1 --save --save-exact => Not work
+--XXX npx expo install react-native-reanimated@~2.8.0 => Back to originl, also not work
+
+
+# Work ! Method
+1. Edit babel.config.js
+    plugins: ['react-native-reanimated/plugin']
+
+2. use expo r -c instead  // Some kind of clear cache ?
+3. Close server and npm run start:wsl => OK
